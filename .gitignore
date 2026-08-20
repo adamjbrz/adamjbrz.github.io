@@ -1,0 +1,9 @@
+# Reference material (other people's CVs, private working files) - never publish
+cv/reference/
+
+# LaTeX build artifacts (the compiled PDF in files/ IS tracked)
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.synctex.gz
+cv/cv.pdf

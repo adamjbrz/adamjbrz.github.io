@@ -1,0 +1,214 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=1.9cm,bottom=2.2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\definecolor{cvblue}{RGB}{43,74,126}
+\usepackage[colorlinks=true,urlcolor=cvblue,linkcolor=cvblue]{hyperref}
+
+% --- Section headings: bold uppercase with a rule beneath ---
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0pt}{}[\vspace{-6pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{11pt}{1pt}
+
+% --- Footer on every page (date stamps itself at compile time) ---
+\newcommand{\monthname}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small Adam Brzezinski's CV}
+\fancyfoot[C]{\small\thepage}
+\fancyfoot[R]{\small Last updated: \monthname\ \number\year}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% Entry: bold title left, italic date right
+\newcommand{\entry}[2]{\textbf{#1}\hfill\textit{#2}\par}
+% Plain entry (no bold): for lines without sub-items
+\newcommand{\pentry}[2]{#1\hfill\textit{#2}\par}
+% Impact note under a paper (media coverage, policy use): indented
+\newcommand{\papernote}[1]{\hspace*{1.6em}#1\par}
+% Professional service: bold label in a fixed-width column, content wraps aligned
+\newcommand{\servrow}[2]{\par\noindent\hangindent=4.6cm\hangafter=1 \makebox[4.6cm][l]{\textbf{#1}}#2\par}
+% Presentations: bold year label in a fixed-width column, entries wrap aligned
+\newcommand{\presyear}[2]{\par\noindent\hangindent=2.1cm\hangafter=1 \makebox[2.1cm][l]{\textbf{#1}}#2\par}
+% Vertical space between papers
+\newcommand{\papergap}{\par\addvspace{8pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Adam Brzezinski}\\[7pt]
+  \href{mailto:a.j.brzezinski@lse.ac.uk}{a.j.brzezinski@lse.ac.uk}
+  \ $\diamond$ \
+  \href{https://www.adambrzezinski.com}{www.adambrzezinski.com}
+\end{center}
+
+\section{Employment}
+
+\entry{London School of Economics and Political Science}{since 10/2023}
+British Academy Postdoctoral Fellow, STICERD\par
+
+\section{Education}
+
+\entry{University of Oxford, New College}{2018--2023}
+DPhil (PhD) in Economics (Advisor: Rick van der Ploeg)\par
+\papergap
+
+\entry{University of Oxford, St.\ Peter's College}{2016--2018}
+MPhil in Economics (Distinction)\par
+\papergap
+
+\entry{University of Warwick}{2013--2016}
+BSc in Economics (First Class)\par
+
+\section{Working Papers}
+
+\textbf{\href{https://drive.google.com/file/d/1Q8lMeOlQE5Nf6-8bWvSlTWWCtPO0otZp/view}{Deliberative Democracy in Political Equilibrium}}\\
+with Tim Besley\\
+\textit{Revise and Resubmit, American Political Science Review}
+\papergap
+
+\textbf{\href{https://cepr.org/active/publications/discussion_papers/dp.php?dpno=15299}{Money for Taxes}}\\
+with Roberto Bonfatti, K.\ Kivanc Karaman and Nuno Palma\\
+\textit{Revise and Resubmit, International Economic Review}
+\papergap
+
+\textbf{\href{https://cepr.org/publications/dp20829}{Narrative Entanglement}}\\
+with Luis Garicano\\
+CEPR Discussion Paper DP20829. \textit{Submitted.}
+\papergap
+
+\textbf{\href{https://cepr.org/publications/dp20410}{A Dynamic Model of Political Narratives and the Rise of Neoliberalism}}\\
+with Tim Besley\\
+CEPR Discussion Paper DP20410. \textit{Submitted.}
+
+\section{Work in Progress}
+
+\textbf{Narratives of Blame}\\
+\textit{Draft coming soon.}
+\papergap
+
+\textbf{Narratives and the Size of Government}\\
+with Tim Besley and Jake Fazzio
+
+\section{Publications}
+
+\textbf{\href{https://ppr.lse.ac.uk/articles/10.31389/lseppr.147}{Economic Policy Narratives: A Taxonomy and Application}}\\
+with Tim Besley and Jake Fazzio\\
+\textit{LSE Public Policy Review}, 4(1), p.~4. 2026.
+\papergap
+
+\textbf{\href{https://direct.mit.edu/rest/article/doi/10.1162/rest_a_01223/112437/}{The Vagaries of the Sea: Evidence on the Real Effects of Money from Maritime Disasters in the Spanish Empire}}\\
+with Yao Chen, Nuno Palma and Felix Ward\\
+\textit{Review of Economics and Statistics}, 106(5), 1220--1235. 2024.
+\papergap
+
+\textbf{\href{https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091923-040328}{Understanding Money using Historical Evidence}}\\
+with Nuno Palma and Fran\c{c}ois Velde\\
+\textit{Annual Review of Economics}, 16, 571--595. 2024.\par
+\papernote{Covered in \href{https://www.economist.com/finance-and-economics/2024/09/19/what-the-history-of-money-tells-you-about-cryptos-future}{The Economist}, September 2024.}
+\papergap
+
+\textbf{\href{https://www.nature.com/articles/s41562-021-01227-0}{Science Skepticism Reduced Compliance with COVID-19 Shelter-in-Place Policies in the United States}}\\
+with Valentin Kecht, David Van Dijcke and Austin Wright\\
+\textit{Nature Human Behaviour}. 2021.
+\papergap
+
+\textbf{\href{https://cepr.org/publications/covid-economics-issue-7}{The COVID-19 Pandemic: Government vs.\ Community Action Across the United States}}\\
+with Guido Deiana, Valentin Kecht and David Van Dijcke\\
+\textit{Covid Economics: Vetted and Real-Time Papers}, 7, 115--156. 2020.
+
+\section{Policy Papers}
+
+\textbf{\href{https://obr.uk/docs/dlm_uploads/Working_paper_22_A_new_UK_overlapping_generations_model.pdf}{A New UK Overlapping Generations Model}}\\
+with Arno Hantzsche and James Watson\\
+OBR Working Paper No.~22. 2025.\par
+\papernote{Used in the OBR's \href{https://obr.uk/frs/fiscal-risks-and-sustainability-july-2025/}{Fiscal Risks and Sustainability Report}, July 2025.}
+
+\section{Awards and Grants}
+
+\pentry{British Academy Postdoctoral Fellowship (\pounds 366,000)}{2023--2026}
+\pentry{STICERD Research Grant (\pounds 4,465)}{2026}
+\pentry{Austrian Marshall Plan Foundation Fellowship (\$6,500)}{2022--2023}
+\pentry{David Walton Distinguished Scholarship, University of Oxford (\pounds 15,000)}{2022--2023}
+\pentry{WU Best Paper Award of WU/City of Vienna (\texteuro 3,500)}{2022}
+\pentry{Carnevali Small Research Grant, Economic History Society (\pounds 3,500)}{2020}
+\pentry{1379 Old Members Scholarship, New College, Oxford (\pounds 5,000 p.a., 3 years)}{2018--2021}
+\pentry{Doctoral Bursary, Oxford Department of Economics}{2018--2021}
+\pentry{Best Undergraduate Paper Award, International Atlantic Economic Society}{2016}
+
+\section{Presentations}
+
+\presyear{Upcoming}{APSA 2026, Boston; AI in Social Science Conference, Chicago.}
+
+\presyear{2026}{EEA-ESEM Conference, Dublin; NBER Summer Institute, Cambridge; Text-as-Data Conference, Bath; SIOE Conference, INSEAD; ERINN Conference, University of Namur; C40 Centre Talk, London; Public Policy Review, LSE; Narratives in Policymaking, LSE (panel discussion); North American Winter Meeting of the Econometric Society, Philadelphia.}
+
+\presyear{2025}{European Winter Meeting of the Econometric Society, Nicosia; Research Seminar, Humboldt University Berlin; SIOE Conference, Sydney; WEHC, Lund; Narratives and Culture in Historical Perspective, LSE; IBEO Political Economy workshop, Alghero; Public Policy Review, LSE (2x); Deliberation and Cohesion Seminar, LSE (2x); PSPE Seminar, LSE; Choice Research Centre Seminar, University of Leicester; Behavioural Political Economy Workshop, LSE (as discussant); Economics Group seminar, King's College London.}
+
+\presyear{2024}{PSPE Symposium, LSE; Classical Liberalism Symposium, LSE; 8th MWZ CEPR Text-as-Data Workshop; NICEP Political Economy Seminar, University of Nottingham.}
+
+\presyear{2023}{HM Treasury OLG Workshop, London; IES Workshop, UC Berkeley.}
+
+\presyear{2022}{Lindau Meeting on Economic Sciences, Lindau; WEHC Conference, Paris; EHES Conference, University of Groningen; Quantitative Methods in Economics seminar, University of Michigan; ASSA Econometric Society Lightning Round for PhD Students; Political Science and Political Economy Work in Progress Seminar, LSE; Micro Theory Student Workshop, University of Oxford.}
+
+\presyear{2021}{3rd European Macrohistory Workshop, University of Bonn; Monetary Policy in Historical Perspective, University of Manchester; Micro Theory Student Workshop, University of Oxford; Socioeconomics Research Seminar, Vienna University of Economics and Business; Economic History Society Annual Conference, University of Warwick.}
+
+\presyear{2020}{Economic \& Social History Graduate Seminar, University of Oxford; Micro Theory Student Workshop, University of Oxford; European History Association Conference (as discussant).}
+
+\presyear{2019}{Research Seminar, Humboldt University Berlin; CFP Workshop: Measuring well-being workshop, University of Utrecht; European Historical Economics Society Conference, Paris School of Economics; Financial history workshop, Goethe University Frankfurt; Lunchtime Seminar, University of Manchester.}
+
+\section{Teaching}
+
+\textbf{Undergraduate seminars}\par
+\pentry{Elementary Mathematical Methods, University of Oxford}{2018--2022}
+\pentry{Microeconomics Prelims, University of Oxford}{2018--2023}
+\pentry{Macroeconomics Prelims, University of Oxford}{2020}
+\pentry{Core Microeconomics, University of Oxford}{2018--2023}
+\pentry{Global Trends in Populism and Social Inequality, Vienna University (designed the course)}{2022--2023}
+\papergap
+
+\textbf{Graduate seminars}\par
+\pentry{Political Economy, LSE}{2023--2024}
+\pentry{Strategic Policymaking, LSE (co-designed with Luis Garicano)}{2023--2024}
+
+\section{Professional Service}
+
+\servrow{Refereeing}{American Journal of Political Science (x2), Economica (x4), European Economic Review, Journal of Institutional and Theoretical Economics, Explorations in Economic History, European Review of Economic History, Empirical Economics, Economics Letters.}
+\papergap
+
+\servrow{Conference organization}{``Narratives and Culture in Historical Perspective'', LSE, June 20--21, 2025.}
+\papergap
+
+\servrow{Grant refereeing}{ERC Advanced Grant; LSE Cohesive Capitalism Programme Grants.}
+\papergap
+
+\servrow{Other university services}{Oxford Undergraduate Admissions for PPE at Brasenose College (two years); Opportunity Oxford Programme: designed and taught the economics course for incoming PPE students.}
+
+\section{Research Visits}
+
+\entry{HM Treasury}{07/2023--09/2023}
+Assistant Economist (also in 07/2022--09/2022)\par
+\papergap
+
+\entry{University of California, Berkeley}{01/2023--05/2023}
+Visiting PhD Student (Host: Barry Eichengreen)\par
+\papergap
+
+\entry{LSE}{01/2022--12/2022}
+Visiting PhD Student (Host: Tim Besley)\par
+
+\section{Personal}
+
+\textit{Citizenship:} Austrian (with UK Settled Status).
+
+\textit{Languages:} English (fluent), German (native), Polish (native).
+
+\end{document}
