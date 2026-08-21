@@ -250,6 +250,69 @@ h3:first-of-type { margin-top: 0; }
 
 /* ---------- Presentations ---------- */
 
+.map-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.map-chip {
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted);
+  background: var(--chip);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 11px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.map-chip:hover { border-color: var(--faint); }
+
+.map-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+#pres-map {
+  height: 400px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin-bottom: 26px;
+  position: relative;
+  z-index: 0; /* contain Leaflet's internal z-indexes below the fixed header */
+}
+
+.pres-cluster {
+  background: var(--accent);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pres-cluster span { line-height: 1; }
+
+/* Must come after .pres-cluster so the muted gray wins when both classes apply */
+.pres-cluster.pres-cluster-muted { background: #b6bcc7; }
+
+.leaflet-popup-content {
+  font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+
 .pres-year {
   display: grid;
   grid-template-columns: 110px 1fr;
