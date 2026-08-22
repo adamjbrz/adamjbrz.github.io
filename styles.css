@@ -330,9 +330,6 @@ h3:first-of-type { margin-top: 0; }
 
 .pres-cluster span { line-height: 1; }
 
-/* Must come after .pres-cluster so the muted gray wins when both classes apply */
-.pres-cluster.pres-cluster-muted { background: #b6bcc7; }
-
 .leaflet-popup-content {
   font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
   font-size: 0.85rem;

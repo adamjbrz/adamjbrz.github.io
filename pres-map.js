@@ -1,12 +1,12 @@
 // Presentations map: one pin per in-person talk, clustered; year filter
-// (highlighted year navy, everything else gray). Online talks have no pin.
+// shows only the selected year's talks ("All" shows everything).
+// Online talks have no pin.
 (function () {
   var el = document.getElementById("pres-map");
   var bar = document.getElementById("map-filter");
   if (!el || !bar || typeof L === "undefined") return;
 
   var NAVY = "#2b4a7e";
-  var GRAY = "#b6bcc7";
 
   // n = venue/talk, c = city, y = year
   var talks = [
@@ -75,15 +75,13 @@
   var markers = [];
   var cluster = null;
 
-  function markerColor(t) {
-    return (activeYear === "All" || String(t.y) === activeYear) ? NAVY : GRAY;
-  }
-
   function applyFilter() {
+    cluster.clearLayers();
     markers.forEach(function (m) {
-      m.marker.setStyle({ fillColor: markerColor(m.talk) });
+      if (activeYear === "All" || String(m.talk.y) === activeYear) {
+        cluster.addLayer(m.marker);
+      }
     });
-    if (cluster) cluster.refreshClusters();
   }
 
   var map = L.map("pres-map", { scrollWheelZoom: false });
@@ -97,12 +95,9 @@
     maxClusterRadius: 34,
     showCoverageOnHover: false,
     iconCreateFunction: function (c) {
-      var highlighted = c.getAllChildMarkers().some(function (k) {
-        return k.options.fillColor === NAVY;
-      });
       return L.divIcon({
         html: "<span>" + c.getChildCount() + "</span>",
-        className: "pres-cluster" + (highlighted ? "" : " pres-cluster-muted"),
+        className: "pres-cluster",
         iconSize: [30, 30]
       });
     }
@@ -114,7 +109,7 @@
       radius: 6,
       color: "#ffffff",
       weight: 1.5,
-      fillColor: markerColor(t),
+      fillColor: NAVY,
       fillOpacity: 0.9
     });
     m.bindPopup("<strong>" + t.n + "</strong><br>" + t.c + " · " + t.y);
