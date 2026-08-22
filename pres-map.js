@@ -53,8 +53,8 @@
     { n: "Political Science and Political Economy Work in Progress Seminar, LSE", c: "London", y: 2022, lat: 51.5144, lng: -0.1165 },
     { n: "Micro Theory Student Workshop", c: "Oxford", y: 2022, lat: 51.7534, lng: -1.2540 },
     // 2021
-    { n: "3rd European Macrohistory Workshop", c: "University of Bonn", y: 2021, lat: 50.7336, lng: 7.1022 },
-    { n: "Monetary Policy in Historical Perspective", c: "University of Manchester", y: 2021, lat: 53.4668, lng: -2.2339 },
+    { n: "Macrohistory Workshop", c: "University of Bonn", y: 2021, lat: 50.7336, lng: 7.1022 },
+    { n: "Monetary Policy Conference", c: "University of Manchester", y: 2021, lat: 53.4668, lng: -2.2339 },
     { n: "Micro Theory Student Workshop", c: "Oxford", y: 2021, lat: 51.7534, lng: -1.2540 },
     { n: "Socioeconomics Research Seminar", c: "Vienna University of Economics and Business", y: 2021, lat: 48.2132, lng: 16.4082 },
     { n: "Economic History Society Annual Conference", c: "University of Warwick", y: 2021, lat: 52.3793, lng: -1.5615 },
@@ -63,7 +63,7 @@
     { n: "Micro Theory Student Workshop", c: "Oxford", y: 2020, lat: 51.7534, lng: -1.2540 },
     // 2019
     { n: "Research Seminar, Humboldt University", c: "Berlin", y: 2019, lat: 52.5178, lng: 13.3939 },
-    { n: "Measuring Well-being Workshop", c: "University of Utrecht", y: 2019, lat: 52.0857, lng: 5.1719 },
+    { n: "CFP Wellbeing Workshop", c: "University of Utrecht", y: 2019, lat: 52.0857, lng: 5.1719 },
     { n: "European Historical Economics Society Conference", c: "Paris School of Economics", y: 2019, lat: 48.8320, lng: 2.3455 },
     { n: "Financial History Workshop", c: "Goethe University Frankfurt", y: 2019, lat: 50.1264, lng: 8.6653 },
     { n: "Lunchtime Seminar", c: "University of Manchester", y: 2019, lat: 53.4668, lng: -2.2339 },
