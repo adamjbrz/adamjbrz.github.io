@@ -132,6 +132,15 @@ h1 {
   margin-bottom: 16px;
 }
 
+.lede a,
+.interests-text a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.lede a:hover,
+.interests-text a:hover { text-decoration: underline; }
+
 .quick-links { display: flex; gap: 20px; flex-wrap: wrap; }
 
 .quick-links a {
