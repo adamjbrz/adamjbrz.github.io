@@ -14,7 +14,7 @@
 
 % --- Section headings: bold uppercase with a rule beneath ---
 \titleformat{\section}{\normalsize\bfseries\uppercase}{}{0pt}{}[\vspace{-6pt}\rule{\textwidth}{0.6pt}]
-\titlespacing*{\section}{0pt}{11pt}{1pt}
+\titlespacing*{\section}{0pt}{14pt}{1pt}
 
 % --- Footer on every page (date stamps itself at compile time) ---
 \newcommand{\monthname}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi}
@@ -35,12 +35,15 @@
 \newcommand{\pentry}[2]{#1\hfill\textit{#2}\par}
 % Impact note under a paper (media coverage, policy use): indented
 \newcommand{\papernote}[1]{\hspace*{1.6em}#1\par}
-% Professional service: bold label in a fixed-width column, content wraps aligned
+% Bold label in a fixed-width column, content wraps aligned
+% (Professional Service, Fields, Personal)
 \newcommand{\servrow}[2]{\par\noindent\hangindent=4.6cm\hangafter=1 \makebox[4.6cm][l]{\textbf{#1}}#2\par}
 % Presentations: bold year label in a fixed-width column, entries wrap aligned
 \newcommand{\presyear}[2]{\par\noindent\hangindent=2.1cm\hangafter=1 \makebox[2.1cm][l]{\textbf{#1}}#2\par}
 % Vertical space between papers
 \newcommand{\papergap}{\par\addvspace{8pt}}
+% Unbreakable paper block: a page break can never fall inside it
+\newenvironment{paperbox}{\par\noindent\begin{minipage}{\textwidth}}{\end{minipage}\par}
 
 \begin{document}
 
@@ -69,70 +72,128 @@ MPhil in Economics (Distinction)\par
 \entry{University of Warwick}{2013--2016}
 BSc in Economics (First Class)\par
 
+\section{Fields}
+
+\servrow{Primary field}{Political Economy.}
+\papergap
+
+\servrow{Secondary fields}{Applied Theory; Economic History; Monetary Economics; Text-as-Data.}
+
+\section{References}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{Tim Besley}\\
+London School of Economics and Political Science\\
+\href{mailto:t.besley@lse.ac.uk}{t.besley@lse.ac.uk}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{Luis Garicano}\\
+London School of Economics and Political Science\\
+\href{mailto:l.garicano@lse.ac.uk}{l.garicano@lse.ac.uk}
+\end{minipage}
+
+\vspace{10pt}
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{Stephane Wolton}\\
+London School of Economics and Political Science\\
+\href{mailto:s.wolton@lse.ac.uk}{s.wolton@lse.ac.uk}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{Rick van der Ploeg}\\
+University of Oxford\\
+\href{mailto:rick.vanderploeg@economics.ox.ac.uk}{rick.vanderploeg@economics.ox.ac.uk}
+\end{minipage}
+
 \section{Working Papers}
 
+\begin{paperbox}
 \textbf{\href{https://drive.google.com/file/d/1Q8lMeOlQE5Nf6-8bWvSlTWWCtPO0otZp/view}{Deliberative Democracy in Political Equilibrium}}\\
 with Tim Besley\\
 \textit{Revise and Resubmit, American Political Science Review}
+\end{paperbox}
 \papergap
 
+\begin{paperbox}
 \textbf{\href{https://cepr.org/active/publications/discussion_papers/dp.php?dpno=15299}{Money for Taxes}}\\
 with Roberto Bonfatti, K.\ Kivanc Karaman and Nuno Palma\\
 \textit{Revise and Resubmit, International Economic Review}
+\end{paperbox}
 \papergap
 
+\begin{paperbox}
 \textbf{\href{https://cepr.org/publications/dp20829}{Narrative Entanglement}}\\
 with Luis Garicano\\
 CEPR Discussion Paper DP20829. \textit{Submitted.}\par
 \papernote{Covered in the \href{https://www.climateeconomicswitharvid.com/p/30-dr-adam-brzezinski-how-narratives}{Climate Economics} podcast and the \href{https://cities1point5.buzzsprout.com/2054827/episodes/19604294-hot-take-urban-legends-sorting-city-climate-facts-from-fiction}{Cities 1.5} podcast.}
+\end{paperbox}
 \papergap
 
+\begin{paperbox}
 \textbf{\href{https://cepr.org/publications/dp20410}{A Dynamic Model of Political Narratives and the Rise of Neoliberalism}}\\
 with Tim Besley\\
 CEPR Discussion Paper DP20410. \textit{Submitted.}
+\end{paperbox}
 
 \section{Selected Work in Progress}
 
+\begin{paperbox}
 \textbf{Narratives of Blame}\\
 \textit{Draft coming soon.}
+\end{paperbox}
 \papergap
 
+\begin{paperbox}
 \textbf{Narratives and the Size of Government}\\
 with Tim Besley and Jake Fazzio
+\end{paperbox}
 
 \section{Publications}
 
+\begin{paperbox}
 \textbf{\href{https://ppr.lse.ac.uk/articles/10.31389/lseppr.147}{Economic Policy Narratives: A Taxonomy and Application}}\\
 with Tim Besley and Jake Fazzio\\
 \textit{LSE Public Policy Review}, 4(1), p.~4. 2026.
+\end{paperbox}
 \papergap
 
+\begin{paperbox}
 \textbf{\href{https://direct.mit.edu/rest/article/doi/10.1162/rest_a_01223/112437/}{The Vagaries of the Sea: Evidence on the Real Effects of Money from Maritime Disasters in the Spanish Empire}}\\
 with Yao Chen, Nuno Palma and Felix Ward\\
 \textit{Review of Economics and Statistics}, 106(5), 1220--1235. 2024.
+\end{paperbox}
 \papergap
 
+\begin{paperbox}
 \textbf{\href{https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091923-040328}{Understanding Money using Historical Evidence}}\\
 with Nuno Palma and Fran\c{c}ois Velde\\
 \textit{Annual Review of Economics}, 16, 571--595. 2024.\par
 \papernote{Covered in \href{https://www.economist.com/finance-and-economics/2024/09/19/what-the-history-of-money-tells-you-about-cryptos-future}{The Economist}, September 2024.}
+\end{paperbox}
 \papergap
 
+\begin{paperbox}
 \textbf{\href{https://www.nature.com/articles/s41562-021-01227-0}{Science Skepticism Reduced Compliance with COVID-19 Shelter-in-Place Policies in the United States}}\\
 with Valentin Kecht, David Van Dijcke and Austin Wright\\
 \textit{Nature Human Behaviour}. 2021.
+\end{paperbox}
 \papergap
 
+\begin{paperbox}
 \textbf{\href{https://cepr.org/publications/covid-economics-issue-7}{The COVID-19 Pandemic: Government vs.\ Community Action Across the United States}}\\
 with Guido Deiana, Valentin Kecht and David Van Dijcke\\
 \textit{Covid Economics: Vetted and Real-Time Papers}, 7, 115--156. 2020.
+\end{paperbox}
 
 \section{Policy Papers}
 
+\begin{paperbox}
 \textbf{\href{https://obr.uk/docs/dlm_uploads/Working_paper_22_A_new_UK_overlapping_generations_model.pdf}{A New UK Overlapping Generations Model}}\\
 with Arno Hantzsche and James Watson\\
 OBR Working Paper No.~22. 2025.\par
 \papernote{Used in the OBR's \href{https://obr.uk/frs/fiscal-risks-and-sustainability-july-2025/}{Fiscal Risks and Sustainability Report}, July 2025.}
+\end{paperbox}
 
 \section{Awards and Grants}
 
@@ -160,13 +221,13 @@ OBR Working Paper No.~22. 2025.\par
 
 \presyear{2022}{Lindau Meeting on Economic Sciences, Lindau; WEHC Conference, Paris; EHES Conference, University of Groningen; Quantitative Methods in Economics seminar, University of Michigan; ASSA Econometric Society Lightning Round for PhD Students; Political Science and Political Economy Work in Progress Seminar, LSE; Micro Theory Student Workshop, University of Oxford.}
 
-\presyear{2021}{Macrohistory Workshop, University of Bonn; Monetary Policy Conference, University of Manchester; Micro Theory Student Workshop, University of Oxford; Socioeconomics Research Seminar, Vienna University of Economics and Business; Economic History Society Annual Conference, University of Warwick.}
+\presyear{2021}{Macrohistory Workshop, University of Bonn; Monetary Policy Conference, University of Manchester; Micro Theory Student Workshop, University of Oxford; Socioeconomics Seminar, Vienna University of Economics and Business; Economic History Society Annual Conference, University of Warwick.}
 
 \presyear{2020}{Economic \& Social History Graduate Seminar, University of Oxford; Micro Theory Student Workshop, University of Oxford; European History Association Conference (as discussant).}
 
 \presyear{2019}{Research Seminar, Humboldt University Berlin; CFP Wellbeing Workshop, University of Utrecht; European Historical Economics Society Conference, Paris School of Economics; Financial history workshop, Goethe University Frankfurt; Lunchtime Seminar, University of Manchester.}
 
-\presyear{2016}{Best Undergraduate Paper Competition of the International Atlantic Economic Society, Washington, D.C.}
+\presyear{2016}{Best Undergraduate Paper Competition (IAES), Washington, D.C.}
 
 \section{Teaching}
 
@@ -184,7 +245,7 @@ OBR Working Paper No.~22. 2025.\par
 
 \section{Professional Service}
 
-\servrow{Refereeing}{American Journal of Political Science (x2), Economica (x4), European Economic Review, Journal of Institutional and Theoretical Economics, Explorations in Economic History, European Review of Economic History, Empirical Economics, Economics Letters.}
+\servrow{Refereeing}{American Journal of Political Science (x2); Economica (x4); European Economic Review; Journal of Institutional and Theoretical Economics; Explorations in Economic History; European Review of Economic History; Empirical Economics; Economics Letters.}
 \papergap
 
 \servrow{Conference organization}{``Narratives and Culture in Historical Perspective'', LSE, June 20--21, 2025.}
@@ -210,8 +271,9 @@ Visiting PhD Student (Host: Tim Besley)\par
 
 \section{Personal}
 
-\textit{Citizenship:} Austrian (with UK Settled Status).
+\servrow{Citizenship}{Austrian (with UK Settled Status).}
+\papergap
 
-\textit{Languages:} English (fluent), German (native), Polish (native).
+\servrow{Languages}{English (fluent); German (native); Polish (native).}
 
 \end{document}

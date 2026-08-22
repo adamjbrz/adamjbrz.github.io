@@ -56,7 +56,7 @@
     { n: "Macrohistory Workshop", c: "University of Bonn", y: 2021, lat: 50.7336, lng: 7.1022 },
     { n: "Monetary Policy Conference", c: "University of Manchester", y: 2021, lat: 53.4668, lng: -2.2339 },
     { n: "Micro Theory Student Workshop", c: "Oxford", y: 2021, lat: 51.7534, lng: -1.2540 },
-    { n: "Socioeconomics Research Seminar", c: "Vienna University of Economics and Business", y: 2021, lat: 48.2132, lng: 16.4082 },
+    { n: "Socioeconomics Seminar", c: "Vienna University of Economics and Business", y: 2021, lat: 48.2132, lng: 16.4082 },
     { n: "Economic History Society Annual Conference", c: "University of Warwick", y: 2021, lat: 52.3793, lng: -1.5615 },
     // 2020
     { n: "Economic & Social History Graduate Seminar", c: "Oxford", y: 2020, lat: 51.7534, lng: -1.2540 },
@@ -68,7 +68,7 @@
     { n: "Financial History Workshop", c: "Goethe University Frankfurt", y: 2019, lat: 50.1264, lng: 8.6653 },
     { n: "Lunchtime Seminar", c: "University of Manchester", y: 2019, lat: 53.4668, lng: -2.2339 },
     // 2016
-    { n: "Best Undergraduate Paper Competition, International Atlantic Economic Society", c: "Washington, D.C.", y: 2016, lat: 38.9072, lng: -77.0369 }
+    { n: "Best Undergraduate Paper Competition (IAES)", c: "Washington, D.C.", y: 2016, lat: 38.9072, lng: -77.0369 }
   ];
 
   var activeYear = "All";
