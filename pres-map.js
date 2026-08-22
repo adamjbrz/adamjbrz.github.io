@@ -86,13 +86,15 @@
 
   var map = L.map("pres-map", { scrollWheelZoom: false });
 
-  // Esri Light Gray Canvas: minimal, English labels worldwide (base + label layer)
-  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
-    attribution: "Tiles &copy; Esri",
-    maxZoom: 16
+  // CARTO Positron, split into base + labels: the labels layer only renders
+  // from zoom 5 up, so continent names (localized) never appear.
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+    maxZoom: 19
   }).addTo(map);
-  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
-    maxZoom: 16
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png", {
+    minZoom: 5,
+    maxZoom: 19
   }).addTo(map);
 
   cluster = L.markerClusterGroup({
