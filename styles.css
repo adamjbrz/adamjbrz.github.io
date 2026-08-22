@@ -366,6 +366,13 @@ h3:first-of-type { margin-top: 0; }
   color: var(--ink);
 }
 
+.teach-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.teach-list a:hover { text-decoration: underline; }
+
 /* ---------- Policy and Media ---------- */
 
 .policy-text {
