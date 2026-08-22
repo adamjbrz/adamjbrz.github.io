@@ -20,7 +20,7 @@
     { n: "Text-as-Data Conference", c: "Bath", y: 2026, lat: 51.3781, lng: -2.3264 },
     { n: "SIOE Conference, INSEAD", c: "Fontainebleau", y: 2026, lat: 48.4241, lng: 2.6928 },
     { n: "ERINN Conference", c: "University of Namur", y: 2026, lat: 50.4661, lng: 4.8613 },
-    { n: "C40 Centre Talk", c: "London", y: 2026, lat: 51.5072, lng: -0.1276 },
+    { n: "C40 Centre Talk", c: "London", y: 2026, lat: 51.5243, lng: -0.0891 },
     { n: "Public Policy Review, LSE", c: "London", y: 2026, lat: 51.5144, lng: -0.1165 },
     { n: "Narratives in Policymaking, LSE (panel)", c: "London", y: 2026, lat: 51.5144, lng: -0.1165 },
     { n: "North American Winter Meeting of the Econometric Society", c: "Philadelphia", y: 2026, lat: 39.9526, lng: -75.1652 },
@@ -44,7 +44,7 @@
     { n: "Classical Liberalism Symposium, LSE", c: "London", y: 2024, lat: 51.5144, lng: -0.1165 },
     { n: "NICEP Political Economy Seminar", c: "University of Nottingham", y: 2024, lat: 52.9384, lng: -1.1950 },
     // 2023
-    { n: "HM Treasury OLG Workshop", c: "London", y: 2023, lat: 51.5010, lng: -0.1246 },
+    { n: "HM Treasury OLG Workshop", c: "London", y: 2023, lat: 51.5019, lng: -0.1288 },
     { n: "IES Workshop, UC Berkeley", c: "Berkeley", y: 2023, lat: 37.8719, lng: -122.2585 },
     // 2022
     { n: "Lindau Meeting on Economic Sciences", c: "Lindau", y: 2022, lat: 47.5460, lng: 9.6840 },
