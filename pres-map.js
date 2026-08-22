@@ -66,7 +66,9 @@
     { n: "Measuring Well-being Workshop", c: "University of Utrecht", y: 2019, lat: 52.0857, lng: 5.1719 },
     { n: "European Historical Economics Society Conference", c: "Paris School of Economics", y: 2019, lat: 48.8320, lng: 2.3455 },
     { n: "Financial History Workshop", c: "Goethe University Frankfurt", y: 2019, lat: 50.1264, lng: 8.6653 },
-    { n: "Lunchtime Seminar", c: "University of Manchester", y: 2019, lat: 53.4668, lng: -2.2339 }
+    { n: "Lunchtime Seminar", c: "University of Manchester", y: 2019, lat: 53.4668, lng: -2.2339 },
+    // 2016
+    { n: "Best Undergraduate Paper Competition, International Atlantic Economic Society", c: "Washington, D.C.", y: 2016, lat: 38.9072, lng: -77.0369 }
   ];
 
   var activeYear = "All";
@@ -125,7 +127,7 @@
   map.fitBounds(bounds, { padding: [24, 24] });
 
   // Year filter chips: "All" first and default
-  var years = ["All", "Upcoming", 2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019];
+  var years = ["All", "Upcoming", 2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2016];
   years.forEach(function (y) {
     var b = document.createElement("button");
     b.type = "button";
