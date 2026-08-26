@@ -14,6 +14,8 @@
     { n: "APSA 2026", c: "Boston", y: "Upcoming", lat: 42.3601, lng: -71.0589 },
     { n: "AI in Social Science Conference", c: "Chicago", y: "Upcoming", lat: 41.8781, lng: -87.6298 },
     { n: "Political Economy Seminar, LSE", c: "London", y: "Upcoming", lat: 51.5144, lng: -0.1165 },
+    { n: "ASSA 2027", c: "Washington, D.C.", y: "Upcoming", lat: 38.9072, lng: -77.0369 },
+    { n: "PSPE Work in Progress Seminar, LSE", c: "London", y: "Upcoming", lat: 51.5144, lng: -0.1165 },
     // 2026
     { n: "EEA-ESEM Conference", c: "Dublin", y: 2026, lat: 53.3438, lng: -6.2546 },
     { n: "NBER Summer Institute", c: "Cambridge, MA", y: 2026, lat: 42.3770, lng: -71.1167 },
