@@ -90,11 +90,11 @@
 
   // CARTO Positron, split into base + labels: the labels layer only renders
   // from zoom 5 up, so continent names (localized) never appear.
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_2dbf_1_1239c0acd3649eec8fe6e915", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
     maxZoom: 19
   }).addTo(map);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png", {
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png?key=cb1_2dbf_1_1239c0acd3649eec8fe6e915", {
     minZoom: 5,
     maxZoom: 19
   }).addTo(map);
