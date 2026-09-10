@@ -481,3 +481,10 @@ h3:first-of-type { margin-top: 0; }
 
 /* Anchor targets land below the fixed header */
 article.paper { scroll-margin-top: calc(var(--header-h) + 14px); }
+
+/* Small grey hint line under a subheading */
+.section-hint {
+  font-size: 0.8rem;
+  color: var(--faint);
+  margin: -12px 0 14px;
+}
