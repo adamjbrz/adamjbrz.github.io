@@ -165,11 +165,11 @@ h2 {
 }
 
 h3 {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--faint);
+  color: var(--ink);
   margin: 40px 0 18px;
 }
 
