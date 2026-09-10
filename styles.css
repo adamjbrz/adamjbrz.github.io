@@ -449,3 +449,36 @@ h3:first-of-type { margin-top: 0; }
   h1 { font-size: 1.9rem; }
   .section { padding-top: 48px; }
 }
+
+/* ---------- Selected research digest ---------- */
+
+.selected-list {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.selected-list li {
+  margin-bottom: 10px;
+  max-width: 50em;
+}
+
+.selected-list a {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.selected-list a:hover { color: var(--accent); }
+
+.sel-venue {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* Anchor targets land below the fixed header */
+article.paper { scroll-margin-top: calc(var(--header-h) + 14px); }
