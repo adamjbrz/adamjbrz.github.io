@@ -15,6 +15,7 @@
     { n: "Political Economy Seminar, LSE", c: "London", y: "Upcoming", d: "10 November 2026", lat: 51.5144, lng: -0.1165 },
     { n: "ASSA 2027", c: "Washington, D.C.", y: "Upcoming", d: "3–5 January 2027", lat: 38.9072, lng: -77.0369 },
     { n: "PSPE Work in Progress Seminar, LSE", c: "London", y: "Upcoming", d: "14 October 2026", lat: 51.5144, lng: -0.1165 },
+    { n: "Behavioural Political Economy Workshop, LSE", c: "London", y: "Upcoming", d: "15–16 January 2027", lat: 51.5144, lng: -0.1165 },
     // 2026
     { n: "APSA 2026", c: "Boston", y: 2026, lat: 42.3601, lng: -71.0589 },
     { n: "EEA-ESEM Conference", c: "Dublin", y: 2026, lat: 53.3438, lng: -6.2546 },
