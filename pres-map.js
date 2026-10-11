@@ -11,12 +11,14 @@
   // n = venue/talk, c = city, y = year
   var talks = [
     // Upcoming
-    { n: "AI in Social Science Conference", c: "Chicago", y: "Upcoming", d: "8–9 October 2026", lat: 41.8781, lng: -87.6298 },
+    { n: "European Winter Meeting of the Econometric Society", c: "Warsaw", y: "Upcoming", d: "2–4 December 2026", lat: 52.2403, lng: 21.0186 },
     { n: "Political Economy Seminar, LSE", c: "London", y: "Upcoming", d: "10 November 2026", lat: 51.5144, lng: -0.1165 },
     { n: "ASSA 2027", c: "Washington, D.C.", y: "Upcoming", d: "3–5 January 2027", lat: 38.9072, lng: -77.0369 },
     { n: "PSPE Work in Progress Seminar, LSE", c: "London", y: "Upcoming", d: "14 October 2026", lat: 51.5144, lng: -0.1165 },
     { n: "Behavioural Political Economy Workshop, LSE", c: "London", y: "Upcoming", d: "15–16 January 2027", lat: 51.5144, lng: -0.1165 },
     // 2026
+    { n: "AI in Social Science Conference", c: "Chicago", y: 2026, lat: 41.8781, lng: -87.6298 },
+    { n: "IOG Fall Conference (joint presentation with Tim Besley)", c: "University of Chicago", y: 2026, lat: 41.7856, lng: -87.5960 },
     { n: "APSA 2026", c: "Boston", y: 2026, lat: 42.3601, lng: -71.0589 },
     { n: "EEA-ESEM Conference", c: "Dublin", y: 2026, lat: 53.3438, lng: -6.2546 },
     { n: "NBER Summer Institute", c: "Cambridge, MA", y: 2026, lat: 42.3770, lng: -71.1167 },
